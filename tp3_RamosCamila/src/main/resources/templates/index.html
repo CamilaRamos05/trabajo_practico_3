@@ -2,70 +2,175 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página Web</title>
+    <title>Programación Visual: Una Guía Completa</title>
+	<link rel="stylesheet" href="/src/main/resources/static/estilos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        aside {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+        }
+        footer nav a {
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>PROGRAMACION VISUAL</h1>
+        <h1>Programación Visual: Una Guía Completa</h1>
+        <nav>
+            <a href="#inicio">Inicio</a> |
+            <a href="#teoria">Teoría</a> |
+            <a href="#practica">Práctica</a> |
+            <a href="#recursos">Recursos</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#seccion1">Inicio</a></li>
-            <li><a href="#seccion2">Lenguaje</a></li>
-            <li><a href="#seccion3">Curiosidades</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section id="seccion1">
+        <section id="inicio">
             <h2>Inicio</h2>
-            <p>			El término programación visual refiere a la programación en la que se utiliza más de una dimensión para expresar la semántica.​ Los lenguajes de programación visual permiten a los usuarios crear programas mediante la manipulación de elementos gráficos, en lugar de especificarlos exclusivamente de manera textual.</p>
+            <p>Bienvenido a nuestra guía sobre programación visual. Aquí encontrarás información teórica y práctica para aprender sobre este fascinante campo.</p>
+        </section>
+
+        <section id="teoria">
+            <h2>Teoría</h2>
+            <h3>Conceptos Básicos</h3>
+            <p>La programación visual es una técnica de desarrollo de software que permite a los programadores crear programas manipulando elementos gráficos en lugar de escribir código en texto. Esto puede hacer que la programación sea más accesible y comprensible para los principiantes.</p>
+
+            <h3>Historia y Evolución</h3>
+            <p>La programación visual comenzó a ganar popularidad en los años 90 con herramientas como Visual Basic. Desde entonces, ha evolucionado con la incorporación de entornos más avanzados como Scratch, Blockly y Node-RED, que permiten crear programas complejos de manera intuitiva.</p>
+
+            <h3>Beneficios de la Programación Visual</h3>
             <ul>
-                <li>Ejem1</li>
-                <li>Ejem2</li>
-                <li>Ejem3</li>
+                <li>Facilidad de uso: Interfaces intuitivas que facilitan la creación de programas.</li>
+                <li>Menor curva de aprendizaje: Ideal para principiantes y educación.</li>
+                <li>Visualización de la lógica: Permite ver claramente la estructura y el flujo del programa.</li>
             </ul>
-            <table>
-                <tr>
-                    <th>Encabezado 1</th>
-                    <th>Encabezado 2</th>
-                </tr>
-                <tr>
-                    <td>Dato 1</td>
-                    <td>Dato 2</td>
-                </tr>
-            </table>
         </section>
 
-        <section id="seccion2">
-            <h2>Lenguaje</h2>
-            <h3>lengauaje en prog. visual</h3>
-            <p>Uno de los principales...</p>
+        <section id="practica">
+            <h2>Práctica</h2>
+            <h3>Ejemplos de Programación Visual</h3>
+            <h4>Scratch</h4>
+            <p>Scratch es una plataforma educativa que permite a los usuarios crear programas interactivos usando bloques de construcción visuales.</p>
+            <pre><code>
+cuando bandera verde presionada
+    mover 10 pasos
+    decir "¡Hola, Mundo!" por 2 segundos
+            </code></pre>
+
+            <h4>Blockly</h4>
+            <p>Blockly es una biblioteca de Google que permite crear aplicaciones web con un editor de programación visual.</p>
+            <pre><code>
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="controls_if" inline="true" x="20" y="20">
+    <mutation else="1"></mutation>
+    <value name="IF0">
+      <block type="logic_compare" inline="true">
+        <field name="OP">GT</field>
+        <value name="A">
+          <block type="math_number">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="text_print" inline="false">
+        <value name="TEXT">
+          <block type="text">
+            <field name="TEXT">Mayor</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="ELSE">
+      <block type="text_print" inline="false">
+        <value name="TEXT">
+          <block type="text">
+            <field name="TEXT">Menor o igual</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
+            </code></pre>
         </section>
 
-        <section id="seccion3">
-            <h2>Curiosidades</h2>
-            <h3>Mas informacion</h3>
-            <p>Puedes encontrar mas informacion en las siguientes paginas</p>
+        <section id="recursos">
+            <h2>Recursos</h2>
+            <h3>Plataformas y Herramientas</h3>
+            <ul>
+                <li><a href="https://scratch.mit.edu/">Scratch</a></li>
+                <li><a href="https://developers.google.com/blockly">Blockly</a></li>
+                <li><a href="https://nodered.org/">Node-RED</a></li>
+            </ul>
+
+            <h3>Tutoriales y Cursos</h3>
+            <ul>
+                <li><a href="https://www.udemy.com/topic/visual-programming/">Udemy: Visual Programming Courses</a></li>
+                <li><a href="https://www.coursera.org/courses?query=visual%20programming">Coursera: Visual Programming</a></li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <h3>Información de contacto</h3>
+            <p>Correo electrónico: marce.cami.ramos@gmail.com</p>
         </section>
     </main>
 
     <aside>
-        <h2>Contenido Adicional</h2>
-        <p>Texto adicional relacionado.</p>
-        <a href="#">Enlace Adicional</a>
-        <img src="programacionvisual.jpg" alt="programacionvisual">
+        <h2>Fuentes</h2>
+        <p>Bibliografía:</p>
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_visual">Wikipedia: Programación Visual</a></li>
+            <li><a href="https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html">Plataforma Java</a></li>
+            <li><a href="https://scratch.mit.edu/">Scratch</a></li>
+            <li><a href="https://developers.google.com/blockly">Blockly</a></li>
+        </ul>
+        <img src="ejemplo.jpg" alt="Imagen representativa">
     </aside>
 
     <footer>
-        <p>Contacto: marce.cami.ramos@gmail.com</p>
-        <p>Redes Sociales:</p>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
+        <p>¡Síguenos en nuestras redes sociales!</p>
+        <nav>
+            <a href="https://www.tiktok.com/@c4mi.r">Tiktok</a> |
+            <a href="https://www.instagram.com/camii_ramos./">Instagram</a>
+			<a href="https://www.facebook.com/camiramos/?locale=es_LA">Facebook</a> |
+        </nav>
     </footer>
 </body>
 </html>
