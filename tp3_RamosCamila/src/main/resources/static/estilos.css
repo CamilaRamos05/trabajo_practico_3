@@ -1,90 +1,148 @@
-/* Encabezado */
-#encabezado {
-    background-color: #333;
-    color: white;
+body, h1, h2, h3, h4, h5, h6, p, ul, li, ol, form, label, input, textarea, select, footer, header, nav, main, aside, section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
     padding: 20px;
-    text-align: center;
 }
 
-/* Menú de navegación */
-.nav-menu {
+header {
     background-color: #444;
-    overflow: hidden;
+    color: #fff;
+    padding: 15px 0;
     text-align: center;
 }
 
-.nav-menu a {
-    color: white;
-    padding: 14px 20px;
+header h1 {
+    margin: 0;
+}
+
+nav.navigation {
+    margin: 15px 0;
+}
+
+nav.navigation a {
+    color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
     display: inline-block;
 }
 
-.nav-menu a:hover {
-    background-color: #ddd;
-    color: black;
+nav.navigation a:hover {
+    background-color: #666;
+    border-radius: 5px;
 }
 
-/* Contenido principal */
-.main-content {
-    padding: 20px;
-}
-
-/* Secciones del contenido principal */
-.main-section {
-    margin-bottom: 40px;
-}
-
-/* Títulos de sección */
-.section-title {
-    font-size: 1.5em;
-    color: #333;
-}
-
-.subsection-title {
-    font-size: 1.2em;
-    color: #666;
-}
-
-/* Contenido dentro de las secciones */
-.section-content p,
-.section-content ul,
-.section-content ol,
-.section-content table {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-/* Contenido adicional */
-.additional-content {
-    background-color: #f4f4f4;
-    padding: 20px;
+main {
     margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.additional-content a {
+h2 {
+    margin-bottom: 10px;
     color: #444;
 }
 
-.additional-content img {
-    max-width: 100%;
-    height: auto;
+h3, h4 {
+    color: #555;
 }
 
-/* Pie de página */
-#pie-de-pagina {
-    background-color: #333;
-    color: white;
+form fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #666;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
-.footer-link {
-    color: white;
-    margin: 0 10px;
+footer p {
+    margin: 0;
+}
+
+footer nav a {
+    color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    display: inline-block;
 }
 
-.footer-link:hover {
-    text-decoration: underline;
+footer nav a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #eaeaea;
+    padding: 2px 4px;
+    border-radius: 4px;
 }
