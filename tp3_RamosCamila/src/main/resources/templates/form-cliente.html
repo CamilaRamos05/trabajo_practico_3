@@ -2,100 +2,159 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registro de Cliente</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Programacion Visual</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Registro de Cliente</h1>
+    <header id="header">
+        <h1>Recursos de Programación: Java y HTML</h1>
+        <nav class="navigation">
+            <a href="#intro">Introducción</a>
+            <a href="#java">Java</a>
+            <a href="#html">HTML</a>
+			<a href="#fuentes">Fuentes</a>
+
+            <a href="form-cliente.html">Formulario</a>
+        </nav>
     </header>
+
     <main>
-        <form action="#" method="post">
-            <label for="dni">DNI:</label>
-            <input type="number" id="dni" name="dni" required>
+        <section id="form">
+            <h2>Registro</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="number" id="dni" name="dni" required>
+                </div>
 
-            <label for="nombres">Nombres:</label>
-            <input type="text" id="nombres" name="nombres" required>
+                <div class="form-group">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres" required>
+                </div>
 
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" name="apellidos" required>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
 
-            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>
 
-            <label>Género:</label>
-            <input type="radio" id="femenino" name="genero" value="femenino">
-            <label for="femenino">Femenino</label>
-            <input type="radio" id="masculino" name="genero" value="masculino">
-            <label for="masculino">Masculino</label>
-            <input type="radio" id="x" name="genero" value="x">
-            <label for="x">X</label>
+                <div class="form-group">
+                    <label>Género:</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="x" name="genero" value="x">
+                    <label for="x">X</label>
+                </div>
+            </fieldset>
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <fieldset>
+                <legend>Información de Contacto</legend>
 
-            <label for="domicilio">Domicilio:</label>
-            <input type="text" id="domicilio" name="domicilio" required>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <label for="provincia">Provincia:</label>
-            <select id="provincia" name="provincia" required>
-                <option value="">Seleccione una provincia</option>
-                <option value="Buenos Aires">Buenos Aires</option>
-                <option value="Catamarca">Catamarca</option>
-                <option value="Chaco">Chaco</option>
-                <option value="Chubut">Chubut</option>
-                <option value="Córdoba">Córdoba</option>
-                <option value="Corrientes">Corrientes</option>
-                <option value="Entre Ríos">Entre Ríos</option>
-                <option value="Formosa">Formosa</option>
-                <option value="Jujuy">Jujuy</option>
-                <option value="La Pampa">La Pampa</option>
-                <option value="La Rioja">La Rioja</option>
-                <option value="Mendoza">Mendoza</option>
-                <option value="Misiones">Misiones</option>
-                <option value="Neuquén">Neuquén</option>
-                <option value="Río Negro">Río Negro</option>
-                <option value="Salta">Salta</option>
-                <option value="San Juan">San Juan</option>
-                <option value="San Luis">San Luis</option>
-                <option value="Santa Cruz">Santa Cruz</option>
-                <option value="Santa Fe">Santa Fe</option>
-                <option value="Santiago del Estero">Santiago del Estero</option>
-                <option value="Tierra del Fuego">Tierra del Fuego</option>
-                <option value="Tucumán">Tucumán</option>
-            </select>
+                <div class="form-group">
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" id="domicilio" name="domicilio" required>
+                </div>
 
-            <label for="telefono">Número de Teléfono Celular:</label>
-            <input type="text" id="telefono" name="telefono" required>
+                <div class="form-group">
+                    <label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia" required>
+                        <option value="">Seleccione una provincia</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucumán">Tucumán</option>
+                    </select>
+                </div>
 
-            <label>Categorías de Interés:</label>
-            <input type="checkbox" id="categoria1" name="categorias" value="categoria1">
-            <label for="categoria1">Teoria</label>
-            <input type="checkbox" id="categoria2" name="categorias" value="categoria2">
-            <label for="categoria2">Practica</label>
-            <input type="checkbox" id="categoria3" name="categorias" value="categoria3">
-            <label for="categoria3">Fuentes</label>
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono Celular:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                </div>
+            </fieldset>
 
-            <label for="sugerencias">Sugerencias para la empresa:</label>
-            <textarea id="sugerencias" name="sugerencias" rows="4" cols="50"></textarea>
+			<fieldset>
+			                    <legend>Preferencias</legend>
+			
+			                    <div class="form-group">
+			                        <label for="lenguajes">Lenguajes de Programación Favoritos:</label>
+			                        <select id="lenguajes" name="lenguajes[]" multiple>
+			                            <option value="python">Python</option>
+			                            <option value="javascript">JavaScript</option>
+			                            <option value="java">Java</option>
+			                            <option value="csharp">C++</option>
+			                            <option value="ruby">Ruby</option>
+			                        </select>
+			                    </div>
+			                </fieldset>
+            <fieldset>
+                <legend>Seguridad</legend>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </fieldset>
 
-            <input type="checkbox" id="terminos" name="terminos" required>
-            <label for="terminos">Acepto los términos y condiciones</label>
+            <fieldset>
+                <legend>Consentimientos</legend>
 
-            <input type="checkbox" id="info" name="info">
-            <label for="info">Acepto recibir información relativa a la empresa</label>
+                <div class="form-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
 
-            <input type="submit" value="Registrar">
+                <div class="form-group">
+                    <input type="checkbox" id="info" name="info">
+                    <label for="info">Acepto recibir información relativa a la empresa</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <input type="submit" value="Registrar">
+            </div>
         </form>
+		
     </main>
-    <footer>
-        <p>¡Síguenos en nuestras redes sociales!</p>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-    </footer>
-</body>
-</html>
+	   <footer>
+		       <p>&copy; 2024 Recursos de Programación | Camila Ramos</p>
+	       <nav>
+	           <a href="https://www.facebook.com">Facebook</a> |
+	           <a href="https://www.twitter.com">Twitter</a> |
+	           <a href="https://www.instagram.com">Instagram</a>
+	       </nav>
+	   </footer>
+	</body>
+	</html>
